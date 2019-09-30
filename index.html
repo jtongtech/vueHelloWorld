@@ -1,0 +1,24 @@
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<div id="root">
+    <div v-if="count === 1">
+        Green
+    </div>
+    <div v-else-if="count === 2">
+        Blue
+    </div>
+    <div v-else="">
+        Red
+    </div>
+
+</div>
+
+<script>
+    var app = new Vue({
+        el: '#root',
+        data: {
+            message: 'Hello Real World Vue!',
+            count: 2
+        }
+    })
+</script>
